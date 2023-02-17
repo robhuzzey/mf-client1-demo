@@ -1,8 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import Header from "./Header";
 
 import "./index.css";
 
-const App = () => <div>Hi there, I'm client1 test push</div>;
+const App = () => (
+    <>
+        <Header />
+        <div>Hi there, I'm client1 test push with header</div>
+    </>
+);
 
 ReactDOM.render(<App />, document.getElementById("app"));
