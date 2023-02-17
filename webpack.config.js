@@ -4,7 +4,7 @@ const ModuleFederationPlugin = require("webpack/lib/container/ModuleFederationPl
 const deps = require("./package.json").dependencies;
 module.exports = (_, argv) => ({
     output: {
-    publicPath: argv.mode === "development" ? "http://localhost:8080/" : "https://mf-client1-demo.vercel.app/",
+    publicPath: argv.mode === "development" ? "http://localhost:8081/" : "https://mf-client1-demo.vercel.app/",
   },
 
     resolve: {
@@ -12,7 +12,7 @@ module.exports = (_, argv) => ({
   },
 
     devServer: {
-      port: 8080,
+      port: 8081,
   },
 
     module: {
