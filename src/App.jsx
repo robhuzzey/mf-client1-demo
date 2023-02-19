@@ -1,5 +1,6 @@
 import React, {useCallback, useState} from "react";
 import ReactDOM from "react-dom";
+import Test from "host/Test";
 import Header from "host/Header";
 import TextContext from "host/TestContext";
 
@@ -14,6 +15,7 @@ const App = () => {
         <>
             <TextContext.Provider value={count}>
                 <Header />
+                <Test />
                 <div>Hi there, I'm client1 test push with header</div>
                 <button onClick={updateCount}>Update Value!</button>
             </TextContext.Provider>

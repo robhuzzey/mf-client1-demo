@@ -1,5 +1,5 @@
 {
-  "name": "mfd client1",
+  "name": "mfdclient1",
   "version": "1.0.1",
   "scripts": {
     "build": "webpack --mode production",
