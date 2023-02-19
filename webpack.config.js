@@ -43,7 +43,7 @@ module.exports = (_, argv) => ({
         name: "client1",
         filename: "remoteEntry.js",
         remotes: {
-          header: "header@https://mf-host-demo2.vercel.app/remoteEntry.js"
+          host: argv.mode === "development" ? "host@http://localhost:8080/remoteEntry.js" : "host@https://mf-host-demo2.vercel.app/remoteEntry.js"
         },
         exposes: {},
         shared: {
